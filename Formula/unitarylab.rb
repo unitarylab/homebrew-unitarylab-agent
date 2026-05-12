@@ -6,18 +6,18 @@ class Unitarylab < Formula
   on_macos do
     on_arm do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-macos-arm64"
-      sha256 "2b2246be327694aa55c42ce518704d3ad3a23d1391043e928199aa5b8c007325"
+      sha256 "937e3e730fd60ad3848459589560d0ce8c9b03a7389eaf66c53e3647885f8c03"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-arm64"
-      sha256 "22e357f72894d08c824e11628a0b08f4660aa3d47e2d7471ad0a41ed6647a8e4"
+      sha256 "43bee0fd5034157583be630cca2b437f59149dc1d517dac22ac04586b5b49ac7"
     end
     on_intel do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-x86_64"
-      sha256 "7617b060a54e9242a9658235dcfa0fbdfb039e9b6aa1b5e2b3a80aa34cb9386b"
+      sha256 "b2d4be5536272768c3bf2c182b159078be35c1be747601aab9a9f08d1cefb221"
     end
   end
 
