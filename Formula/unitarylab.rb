@@ -1,23 +1,27 @@
 class Unitarylab < Formula
-  desc "UnitaryLab CLI — interactive quantum agent"
-  homepage "https://github.com/unitarylab/unitarylab-agent"
+  ASSETS_ORIGIN = "http://assets.unitarylab.com".freeze
+
+  desc "UnitaryLab CLI — 交互式量子智能体"
+  homepage ASSETS_ORIGIN
   version "0.1.5"
+
+  # 各平台二进制同一域名分发；路径后缀与 GitHub Release 工件文件名一致。
 
   on_macos do
     on_arm do
-      url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-macos-arm64"
-      sha256 "150ea155529ff91622a70dfb3f73d7d6aada410bb4c87fff5213b30f8348f15d"
+      url "#{ASSETS_ORIGIN}/unitarylab-macos-arm64"
+      sha256 "2a397ce7b58417dec0c462027de4a8f0f848e5b33c4d05fbdfbf53bbbfd3ecab"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-arm64"
-      sha256 "3285acfc7bd633230f7820dfebf9f33063ddde5665a594be9c2aa0573da3bd8c"
+      url "#{ASSETS_ORIGIN}/unitarylab-linux-arm64"
+      sha256 "34787300475373a0c59cf0b7358d5978a2c22081a9ae0ceb008ee7f3c6ba1542"
     end
     on_intel do
-      url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-x86_64"
-      sha256 "855c3dbf3d72cebe1262434cd72801bbe094674fe96ac271883583604f17f2a9"
+      url "#{ASSETS_ORIGIN}/unitarylab-linux-x86_64"
+      sha256 "29c64a643af8ae480489edda4ff4a01c105bc6573f8be51eae71abd4fe09d2d8"
     end
   end
 
