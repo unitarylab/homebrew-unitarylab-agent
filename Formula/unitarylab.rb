@@ -38,3 +38,4 @@ class Unitarylab < Formula
   test do
     assert_match "unitarylab", shell_output("#{bin}/unitarylab --help 2>&1")
   end
+end
