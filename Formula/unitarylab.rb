@@ -8,7 +8,7 @@ class Unitarylab < Formula
     on_arm do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-macos-arm64"
       # unitarylab:update: macos-arm64
-      sha256 "553a278c4d15edbfa83c9a57b694c86f9941660d3e7463818108a4feb2577e34"
+      sha256 "98b3fc81750ba5c2af4feb819062f5984f99ccd49e69414e340fa9008b2a220e"
     end
 
     on_intel do
@@ -20,13 +20,13 @@ class Unitarylab < Formula
     on_arm do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-arm64"
       # unitarylab:update: linux-arm64
-      sha256 "e1a431077d23964dffcb93e459b4f415e6e046cebe6e9f397ac6d820836b1dc1"
+      sha256 "32cee3974c474fcfdcce27846a3b73bb837b40667fea5e47f67d6c1019d9a1de"
     end
 
     on_intel do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-x86_64"
       # unitarylab:update: linux-x86_64
-      sha256 "92c178892bc360e7dfafe2b18874246e22c28489c7390c14538526ed2f0b9680"
+      sha256 "4a05e530f03aa9d35d81e98a5d68008610eb552b23df79f253e14aac9f13a057"
     end
   end
 
