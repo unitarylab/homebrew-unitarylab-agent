@@ -1,14 +1,14 @@
 class Unitarylab < Formula
   desc "UnitaryLab CLI — interactive quantum agent"
   homepage "https://github.com/unitarylab/unitarylab-agent"
-  version "0.1.1"
+  version "0.1.2"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-macos-arm64"
       # unitarylab:update: macos-arm64
-      sha256 "4ff6415f649694986d74b11268bfbec484cc23eef0f9f82438e7ecd0a108b9cc"
+      sha256 "48336f6b795e7b90faf7bbb36387a66e696a6ee7327c5913d5881b54ed90da98"
     end
 
     on_intel do
@@ -20,13 +20,13 @@ class Unitarylab < Formula
     on_arm do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-arm64"
       # unitarylab:update: linux-arm64
-      sha256 "3b1f30c62ff423d9cd4a6b81ed421ea6f9cc3b3e163c6a6dfee0660d74653329"
+      sha256 "ed40122338ba03f3051085e4340ccaf57732cb3501c2d5940f131eebb3469614"
     end
 
     on_intel do
       url "https://github.com/unitarylab/unitarylab-agent/releases/download/v#{version}/unitarylab-linux-x86_64"
       # unitarylab:update: linux-x86_64
-      sha256 "c0864baddaa104afe4a716a27f5c0a992bda560c9db15662d941dcb4df1d191d"
+      sha256 "95973af73738249d59e7883d33aa5389b8673ccbc8a9fcf7526605e3163ae336"
     end
   end
 
